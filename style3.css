@@ -17,11 +17,10 @@ body {
     height: 100vh;
     overflow-x: hidden;
     background-color: black;
-    color: white;
+    color: rgb(13, 2, 2);
 }
 header{
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,38 +31,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10px;
-    transition: background-color 0.3s ease;
-
-
-     .header.scrolled { 
-    background-color: black; /* Change the background color on scroll */
-  }
-  
-  /* This CSS is applied when the user scrolls down */
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 0) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  }); 
-}
-/* header{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 100;
-} */
+}
 .logo{
     font-size: 3rem;
     color: #2cd8be;
@@ -134,7 +103,7 @@ nav a.active{
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
     /* background-color: blue; */
@@ -142,8 +111,7 @@ nav a.active{
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border: 1px solid white;
-    background-color: black;
+    border-color: #333;
     outline: none;
     color: white;
 }
@@ -167,16 +135,4 @@ nav a.active{
     background-color: #b74b4b;
     color: black;
     box-shadow: 0 0 25px #b74b4b;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    font-size: small;
-    text-align: center;
-}
-footer-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 10px;
 }
