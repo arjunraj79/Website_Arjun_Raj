@@ -29,7 +29,7 @@
             <div class="container">
                 <h2 style="color: #b74b4b;">Contact Me</h2>
                 <p>If you have any questions or just want to get in touch, feel free to drop me a message below!</p>
-                <form action="contact.php" method="post" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
                     <div class="form-group">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -42,10 +42,23 @@
                         <label for="message">Your Message:</label>
                         <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                     </div>
+                    <input type="hidden" name="redirect" href="thank-you.html">
                     <button type="submit" class="btn">Send Message</button>
+                    <input type="hidden" name="access_key" value="8f0b7c56-4551-462a-9e41-c6da61f047d2">
                 </form>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Arjun Raj. All rights reserved.</p>
+            <ul class="social-links">
+                <li> <a href="https://www.linkedin.com/in/arjun-raj-8882801b7/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/arjunraj79/AV"><i class="fa-brands fa-github"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i></a> -->
+                    <a href="https://www.instagram.com/btw_i.m_arjun/"><i class="fa-brands fa-instagram">s</i></a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
