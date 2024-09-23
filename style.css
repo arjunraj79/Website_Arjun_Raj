@@ -34,7 +34,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10px;
+    z-index: 10;
     transition: background-color 0.3s ease;
 
 
